@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(image/cetis-interior-1-3.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: #FFFDFC;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 85px;
+    color: #FFFDFC;
+}
+
+.header-txt h1 {
+    font-size: 85px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.header-txt p {
+    color: #BEBEBE;
+    font-size: 18px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+}
+
+.btn-1 {
+    display: inline-flex;
+    padding: 12px 45px;
+    border: 1px solid #FFFDFC;
+    color: #FFFDFC;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.btn-1:hover {
+    color: #1B293A;
+    background-color: #FFFDFC;
+}
+
+.general {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.rombos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.rombo1 {
+    background-image: url(image/r1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    padding: 170px 55px;
+}
+
+.rombo2 {
+    background-image: url(image/r2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    padding: 170px 55px;
+}
+
+.rombo3 {
+    background-image: url(image/r3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 450px;
+    padding: 170px 55px;
+}
+
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #1B293A;
+}
+
+.txt h3 {
+    font-size: 18px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.txt p {
+    color: #BEBEBE;
+    font-size: 16px;
+}
+
+footer {
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+
+form {
+    margin-top: 35px;
+}
+
+.campo {
+    border: solid black 3px;
+    margin-right: 10px;
+    padding: 17px 35px;
+    border: 2px solid #B4B4B4;
+    outline: none;
+    color: #1B293A;
+}
+
+.campo::placeholder {
+    color: #B4B4B4;
+}
+
+.btn-2 {
+    border: none;
+    padding: 17px 35px;
+    background-color: #1B293A;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.footer-txt {
+    margin-top: 100px;
+    border-top: 1px solid #B4B4B4;
+    padding: 20px 0;
+}
+
+.footer-txt p {
+    color: #1B293A;
+    font-size: 16px;
+}
+
+.footer-txt ul {
+    color: #1B293A;
+    font-size: 16px;
+}
+
+@media(max-width:900px) {
+   
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1B293A;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-txt h1 {
+        font-size: 50px;
+    }
+
+    .header-txt p {
+        padding: 0;
+    }
+
+    .general {
+        padding: 30px 30px 0 30px;
+    }
+
+    .rombos {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .rombo1,
+    .rombo2,
+    .rombo3{
+        height: 350px;
+        padding: 100px 40px;
+        margin: 5px 0;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campo {
+        margin: 10px 50px;
+    }
+
+    .btn-2{
+        margin: 10px 100px 20px 100px;
+    }
+    .footer-txt {
+        margin: 10px;
+    }
+}
